@@ -1,9 +1,9 @@
 ***************
 USAGE
 ***************
-Make New View
+- Create a new Controller at `view/yourview` then put like this:
 
-```PHP
+```
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
@@ -16,12 +16,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <!-- Your Content -->
 
 </div>
-<!---Container Fluid-->
+?>
 ```
 
-Make New Controller
-
-```php
+- Create a new Controller at `Application/Controller` then put like this:
+```
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
@@ -44,6 +43,7 @@ class Element extends CI_Controller
         $this->load->view('_layout/footer');
     }
 }
+?>
 ```
 
 ###################
